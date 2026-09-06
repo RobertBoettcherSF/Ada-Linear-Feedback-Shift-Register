@@ -1,4 +1,5 @@
 with Interfaces;
+use type Interfaces.Unsigned_64;
 
 package Linear_Feedback_Shift_Register is
    pragma Preelaborate;
