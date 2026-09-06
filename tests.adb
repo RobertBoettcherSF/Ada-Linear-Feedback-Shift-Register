@@ -91,7 +91,8 @@ procedure Tests is
    begin
       Put_Line ("TEST 6 - Fibonacci Maximal Period (4-bit)");
       Initialize (Engine, Fibonacci, 4, Seed, 9);
-      for I in 1 .. 15 loop
+      for Dummy in 1 .. 15 loop
+         pragma Unreferenced (Dummy);
          Next_Bit (Engine, Output);
          if Output = 1 then
             Ones := Ones + 1;
@@ -113,7 +114,8 @@ procedure Tests is
    begin
       Put_Line ("TEST 7 - Galois Maximal Period (4-bit)");
       Initialize (Engine, Galois, 4, Seed, 9);
-      for I in 1 .. 15 loop
+      for Dummy in 1 .. 15 loop
+         pragma Unreferenced (Dummy);
          Next_Bit (Engine, Output);
          if Output = 1 then
             Ones := Ones + 1;
